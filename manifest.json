@@ -1,0 +1,18 @@
+{
+    "name": "FakeNitro",
+    "description": "Allows you to send fake emojis/stickers, use nitro themes, and stream in nitro quality without having Nitro",
+    "authors": [
+        {
+            "name": "Vencord",
+            "id": ""
+        },
+        {
+            "name": "sigh",
+            "id": ""
+        }
+    ],
+    "main": "src/index.tsx",
+    "vendetta": {
+        "icon": "ic_nitro"
+    }
+}
