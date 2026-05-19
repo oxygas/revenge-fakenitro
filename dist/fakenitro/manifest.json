@@ -11,7 +11,7 @@
             "id": ""
         }
     ],
-    "main": "src/index.tsx",
+    "main": "index.js",
     "vendetta": {
         "icon": "ic_nitro"
     },

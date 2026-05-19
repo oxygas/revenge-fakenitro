@@ -106,6 +106,7 @@ writeFileSync(pathResolve(DIST_DIR, "index.js"), code);
 // Write manifest with hash
 const manifestWithHash = {
     ...MANIFEST,
+    main: "index.js",
     hash,
 };
 writeFileSync(pathResolve(DIST_DIR, "manifest.json"), JSON.stringify(manifestWithHash, null, 4));
