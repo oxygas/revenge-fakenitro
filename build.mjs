@@ -9,12 +9,13 @@ import commonjs from "@rollup/plugin-commonjs";
 const PLUGIN_DIR = pathResolve(import.meta.dirname);
 const DIST_DIR = pathResolve(PLUGIN_DIR, "dist", "fakenitro");
 const MANIFEST = JSON.parse(readFileSync(pathResolve(PLUGIN_DIR, "manifest.json"), "utf-8"));
+const INPUT_FILE = pathResolve(PLUGIN_DIR, MANIFEST.main);
 
 mkdirSync(DIST_DIR, { recursive: true });
 
 // Build the plugin
 const bundle = await rollup({
-    input: pathResolve(PLUGIN_DIR, MANIFEST.main),
+    input: INPUT_FILE,
     plugins: [
         nodeResolve({
             browser: true,
